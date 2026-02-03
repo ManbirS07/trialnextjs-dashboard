@@ -1,3 +1,5 @@
+import '@/app/ui/global.css' //globally defined css rules which we can apply to all applications
+import { Inter } from './ui/fonts';
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+       <body className={`${Inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
